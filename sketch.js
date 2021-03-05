@@ -86,10 +86,12 @@ function keyPressed()   {
   }
   if (keyCode===UP_ARROW) { 
     Matter.Body.applyForce(bob2.body,bob2.body.position,{x:-600,y:600}); 
+    Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-600,y:600}); 
    
   }
   if (keyCode===DOWN_ARROW) { 
     Matter.Body.applyForce(bob4.body,bob4.body.position,{x:600,y:-600}); 
+    Matter.Body.applyForce(bob5.body,bob5.body.position,{x:600,y:-600});
    
   }
   if (keyCode===RIGHT_ARROW) { 
